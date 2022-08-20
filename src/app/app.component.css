@@ -13,6 +13,7 @@
     width:100vw;
   }
   .c1 {
+    height: fit-content;
     /* fallback for old browsers */
     background: #f6d365;
   
@@ -23,6 +24,7 @@
     background: linear-gradient(to left, rgba(246, 211, 101, 1), rgba(253, 160, 133, 1))
   }
   .c2 {
+    height: fit-content;
     /* fallback for old browsers */
     background: #f6d365;
   
@@ -36,3 +38,4 @@
     position: center;
     
   }
+
