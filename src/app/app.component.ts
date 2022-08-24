@@ -34,7 +34,7 @@ export class AppComponent {
   url:string="";
   MAX_MEME_COUNT=99;
   index:number=0;
-  width=500;
+  height=300;
   ratio:number=0;
   memeApi:MemeApi | undefined;
   constructor(private http:HttpClient){}
@@ -49,8 +49,8 @@ export class AppComponent {
       this.index = Math.floor(Math.random() * (this.MAX_MEME_COUNT + 1));
       this.memeApi= res.data.memes[this.index];
       console.log(this.memeApi);
-       this.ratio = this.width/this.memeApi.width;
-       this.memeApi.height = this.memeApi.height*this.ratio;
+       this.ratio = this.height/this.memeApi.height;
+       this.memeApi.width = this.memeApi.width*this.ratio;
       ;})
   }
 }
